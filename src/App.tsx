@@ -1,10 +1,15 @@
-import React from 'react';
+import RoutesConfig from './routes';
+import GLobalStyled from './styles';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Teste</h1>
-    </div>
+    <>
+      <GLobalStyled />
+      <RoutesConfig />
+      <ToastContainer autoClose={3000} />
+    </>
   );
 }
 
